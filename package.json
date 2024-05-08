@@ -11,6 +11,8 @@
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-router": "^2.6.11",
+    "fs" : "*",
     "vue-json-compare": "^3.0.0"
   },
   "devDependencies": {

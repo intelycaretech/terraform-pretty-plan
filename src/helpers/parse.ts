@@ -1,5 +1,5 @@
-import { Action, ResourceId, Plan, ChangeType, Diff , RawResource, RawChanges} from '@/helpers/interfaces'
-import { equal }  from '@/helpers/equal'
+import { Action, ResourceId, Plan, ChangeType, Diff , RawResource, RawChanges} from './interfaces'
+import { equal }  from './equal'
 
 export function parse(terraformPlan: any): Plan {
 
@@ -40,7 +40,7 @@ export function parseId(resource: RawResource): ResourceId {
 
     const idSegments = resource.address.split('.');
     const resourcePrefixes = idSegments.slice(0, idSegments.length - 2);
-
+    console.log(resource.address);
     return { 
         name: resource.name, 
         type: resource.type, 
