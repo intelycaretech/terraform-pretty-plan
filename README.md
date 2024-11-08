@@ -9,6 +9,12 @@
 ```
 npm install
 ```
+
+### Setup Node env var
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
